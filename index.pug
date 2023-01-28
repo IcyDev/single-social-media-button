@@ -1,0 +1,13 @@
+extends layout.pug
+
+
+block content
+  -var values = [{link: '#',icon: 'https://www.freepnglogos.com/uploads/facebook-logo-13.png',alt: 'Facebook'}, {link: '#',icon: 'https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-instagram-new-logo-vector-download-13.png',alt: 'Instagram'}, {link: '#',icon: 'https://www.freepnglogos.com/uploads/whatsapp-png-image-9.png',alt: 'WhatsApp'}]
+
+  .content-follow-social-media
+    each value, i in values
+      a.follow-social-media-item(href= value.link, target="_bank") 
+        img(
+          src= value.icon, 
+          alt= value.alt
+        )

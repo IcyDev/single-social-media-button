@@ -1,0 +1,28 @@
+.content-follow-social-media {
+	max-width: 40px;
+	@media (max-width: 560px) {
+		max-width: 25px;
+	}
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	grid-row-gap: 5px;
+
+	position: fixed;
+	bottom: 0px;
+	right: 0;
+	margin: 0 10px 10px 0;
+	.follow-social-media-item {
+		padding: 0px;
+		margin: 0px;
+		transition: all 0.2s linear;
+		&:hover {
+			transform: scale(1.2);
+		}
+		img {
+			padding: 0px;
+			margin: 0px;
+			max-width: 100%;
+		}
+	}
+}
